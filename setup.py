@@ -9,7 +9,7 @@ setuptools.setup(
     long_description="PyTG boilerplate",
     long_description_content_type="text/markdown",
     url="https://github.com/pytg/pytg",
-    packages=setuptools.find_packages(),
+    packages=["pytg", "pytg.components", "pytg.commands", "pytg.remote", "pytg.testing"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
