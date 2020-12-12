@@ -1,7 +1,7 @@
 """PyTG add module utility
 
 Usage:
-    pytg add_module (<package> | --folder <folder> | --repo <repo>) [--subfolder <subfolder>]
+    pytg add_module (<package> | --folder <folder> | --repo <repo-path>) [--subfolder <subfolder-path>]
 """
 from docopt import docopt
 
@@ -30,11 +30,11 @@ def exec():
         if package:
             repo = f"git@github.com:pytg/pytg-{package}"
         else:
-            repo = arguments["<folder>"]
+            repo = arguments["<repo-path>"]
 
         Repo.clone_from(repo, "repo_tmp/")
         if arguments["--subfolder"]:
-            source_folder = "repo_tmp/{}".format(arguments["<subfolder>"])
+            source_folder = "repo_tmp/{}".format(arguments["<subfolder-path>"])
         else:
             source_folder = "repo_tmp/"
 
