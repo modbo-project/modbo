@@ -6,6 +6,7 @@ Usage:
 Options:
     --source-only                       Act on source files only (maintain content folder of a given module)
     --repo <repo-path>                  Choose a git repository as a source
+    --folder <folder-path>              Choose a folder as a source
     --subfolder <subfolder-path>        Act on a specific subfolder of the chosen source
 """
 import importlib
