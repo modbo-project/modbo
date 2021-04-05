@@ -1,14 +1,14 @@
 import setuptools
 
 setuptools.setup(
-    name="pytg",
+    name="modbo",
     version="0.0.1",
     author="aegroto",
     author_email="aegroto@protonmail.com",
-    description="PyTG boilerplate",
-    long_description="PyTG boilerplate",
+    description="Modbo boilerplate",
+    long_description="Modbo boilerplate",
     long_description_content_type="text/markdown",
-    url="https://github.com/pytg/pytg",
+    url="https://github.com/modbo/modbo",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

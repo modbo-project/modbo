@@ -1,7 +1,7 @@
-"""PyTG remove module utility
+"""Modbo remove module utility
 
 Usage:
-    pytg remove_module [--source-only] (<name>)
+    modbo remove_module [--source-only] (<name>)
 """
 import shutil
 

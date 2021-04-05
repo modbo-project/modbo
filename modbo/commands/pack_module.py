@@ -1,7 +1,7 @@
-"""PyTG pack module utility
+"""Modbo pack module utility
 
 Usage:
-    pytg pack_module (<name>) [<destination-folder>]
+    modbo pack_module (<name>) [<destination-folder>]
 """
 import shutil, argparse
 
@@ -14,7 +14,7 @@ def exec():
     dest = arguments["<destination-folder>"]
 
     if not dest:
-        dest = f"pytg-{name}"
+        dest = f"modbo-{name}"
 
     source_folder = f"modules/{name}"
     content_folder = f"content/{name}"

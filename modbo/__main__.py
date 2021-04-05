@@ -1,7 +1,7 @@
-"""PyTG
+"""Modbo
 
 Usage: 
-    pytg (<command>) [<parameters>...] [options]
+    modbo (<command>) [<parameters>...] [options]
 
 Options:
     --source-only                       Act on source files only (maintain content folder of a given module)
@@ -18,4 +18,4 @@ if __name__ == '__main__':
 
     command = arguments["<command>"]
 
-    importlib.import_module(f"pytg.commands.{command}").exec()
+    importlib.import_module(f"modbo.commands.{command}").exec()

@@ -3,7 +3,7 @@ import socket
 from .RemoteCallListener import RemoteCallListener
 from .RemoteModuleManager import RemoteModuleManager
 
-from pytg.modules_loading import _ModulesLoader
+from modbo.modules_loading import _ModulesLoader
 
 def expose(host, port, exposed_modules):
     accepting_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

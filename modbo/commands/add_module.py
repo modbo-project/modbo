@@ -1,7 +1,7 @@
-"""PyTG add module utility
+"""Modbo add module utility
 
 Usage:
-    pytg add_module (<package> | --folder <folder> | --repo <repo-path>) [--subfolder <subfolder-path>]
+    modbo add_module (<package> | --folder <folder> | --repo <repo-path>) [--subfolder <subfolder-path>]
 """
 from docopt import docopt
 
@@ -28,7 +28,7 @@ def exec():
         from git import Repo
 
         if package:
-            repo = f"git@github.com:pytg/pytg-{package}"
+            repo = f"git@github.com:modbo/modbo-{package}"
         else:
             repo = arguments["<repo-path>"]
 

@@ -2,10 +2,10 @@ import logging, os
 
 import queue
 
-from pytg.modules_loading import _ModulesLoader
+from modbo.modules_loading import _ModulesLoader
 
-from pytg.development import dev_mode_on
-from pytg.initialization import initialize_module, connect_module, launch_main_module
+from modbo.development import dev_mode_on
+from modbo.initialization import initialize_module, connect_module, launch_main_module
 
 LOGGER = logging.getLogger(__name__)
 
