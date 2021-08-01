@@ -28,7 +28,7 @@ def exec():
         from git import Repo
 
         if package:
-            repo = f"git@github.com:modbo/modbo-{package}"
+            repo = f"git@github.com:modbo-project/{package}"
         else:
             repo = arguments["<repo-path>"]
 
